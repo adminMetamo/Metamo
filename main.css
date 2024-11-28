@@ -1,0 +1,73 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.construction-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff6347; /* Tomato color for Metamo */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+.animation {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cone {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff6347, #ffcccb);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  margin: 0 10px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.cone:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Contact section */
+.contact {
+  margin-top: 20px;
+  font-size: 1rem;
+}
