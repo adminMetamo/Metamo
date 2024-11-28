@@ -5,21 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metamo | Under Construction</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Reset and Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .construction-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    /* Headings and Text */
+    h1 {
+      font-size: 3rem;
+      color: #2c3e50;
+      margin: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .contact {
+      font-size: 1.3rem;
+      color: #16a085;
+      margin-top: 20px;
+      font-weight: bold;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation for cones */
+    .animation {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .cone {
+      width: 30px;
+      height: 50px;
+      background-color: #f39c12;
+      margin: 0 10px;
+      border-radius: 50%;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .cone:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Styling the anchor */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+  </style>
 </head>
 <body>
   <div class="construction-container">
-    <!-- Wrap the <h1> in an <a> tag for the redirection -->
+    <!-- Make the h1 clickable with <a> tag -->
     <a href="aboutus.html">
-      <h1>Metamo</h1></a>
+      <h1>Metamo</h1>
+    </a>
     <p>Our site is currently under construction. 🚧</p>
     <p>We're working hard to bring you something amazing!</p>
-    </div>
-    <div class="animation">
-      <div class="cone"></div>
-      <div class="cone"></div>
-    </div>
-    
-    <p class="contact">Stay tuned!</p>
   </div>
+
+  <div class="animation">
+    <div class="cone"></div>
+    <div class="cone"></div>
+  </div>
+
+  <p class="contact">Stay tuned!</p>
 </body>
 </html>
